@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<head>
+<script src="https://d3js.org/d3.v4.js"></script>
+<script src="../static/css/styles.css"></script>
+<script src="https://cdn.jsdelivr.net/gh/holtzy/D3-graph-gallery@master/LIB/d3.layout.cloud.js"></script>
+
+<title>Dashboard</title>
+</head>
+
+
+
+
+<body>
+    <h1>Dashboard</h1>
+    <!-- insert data from flask here -->
+    <a id="target" href = dashboard.html></a>
+    
+</body>
+
+<!-- <script type="text/javascript"> 
+    
+    let data = {{ json_data | tojson }}
+    console.log(data)
+
+</script> -->
+
+
+
+<!-- <script src='../data/topics_count_list.csv'></script> -->
+<script src='../static/js/app.js'></script>
+
+<script type="text/javascript"> 
+    const newData = d3.csvParse('../../data/topics_count_list.csv');
+    console.log(newData)
+</script>
